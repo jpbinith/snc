@@ -1,0 +1,26 @@
+explore_lite:  # Node name (as defined in the explore package)
+  ros__parameters:
+    # Robot and map frames (ensure these match your TF frame names)
+    base_frame: "base_link"               # Robot base frame ID
+    map_frame: "map"                      # Global map frame ID
+    
+    # Topics for map and movement
+    map_topic: "/map"                     # Occupancy grid topic from SLAM
+    explore_costmap: ""                   # (Not used; explore_lite uses global map directly)
+    nav2_timeout: 5.0                     # [ROS2 port] Navigation goal timeout (seconds)
+    
+    # Frontier search parameters
+    planner_frequency: 1.0                # Frequency (Hz) to search for new frontiers
+    progress_timeout: 30.0               # Give up goal if no progress in this time (sec)
+    visualize: true                      # Publish exploration markers for frontiers in Rviz
+    min_frontier_size: 0.5               # Frontiers smaller than this (m) are ignored
+    
+    # Goal blacklisting (avoid repeatedly trying unreachable areas)
+    blacklist_radius: 1.0                # Radius around failed goal to blacklist
+    timeout_penalty: 5.0                 # Increase timeout after each failed attempt
+    
+    # Other parameters (if needed for Nav2 integration)
+    planner_namespace: "planner_server"   # Nav2 planner node name (for action interface)
+    controller_namespace: "controller_server" # Nav2 controller node name
+    # Use simulation time if in simulation
+    use_sim_time: false                  # (We will override this to true in simulation launch)

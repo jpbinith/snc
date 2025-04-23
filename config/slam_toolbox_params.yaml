@@ -1,0 +1,35 @@
+# slam_toolbox_params.yaml
+# Parameters for SLAM Toolbox (synchronous mode)
+
+use_sim_time: false
+slam_toolbox:
+  ros__parameters:
+    # Choose sync or async mode:
+    mode: "mapping"               # "mapping" = synchronous SLAM
+    # Map saving options
+    map_file_name: ""             
+    map_publish_period: 1.0       # how often to publish map (Hz)
+
+    # Robot/base frames
+    odom_frame: "odom"
+    map_frame: "map"
+    base_frame: "base_link"
+
+    # Sensor sources
+    scan_topic: "scan"
+
+    # Update and transform parameters
+    map_update_interval: 0.5      # seconds between map updates
+    transform_publish_period: 0.05# TF publish rate (s)
+
+    # Map resolution and size
+    resolution: 0.05              # meters per cell
+    max_laser_range: 30.0         # maximum LIDAR range (m)
+    minimum_score: 0.1            # minimum matching score to accept updates
+
+    # SLAM algorithm settings
+    loop_closure_detection_period: 5.0   # seconds between loop closure checks
+    map_saver_filename: "map"
+
+    # Optimization settings
+    optimize_every_n_nodes: 10           # graph optimization frequency
