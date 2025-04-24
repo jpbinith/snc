@@ -1,35 +1,66 @@
-# slam_toolbox_params.yaml
-# Parameters for SLAM Toolbox (synchronous mode)
-
-use_sim_time: false
 slam_toolbox:
   ros__parameters:
-    # Choose sync or async mode:
-    mode: "mapping"               # "mapping" = synchronous SLAM
-    # Map saving options
-    map_file_name: ""             
-    map_publish_period: 1.0       # how often to publish map (Hz)
 
-    # Robot/base frames
-    odom_frame: "odom"
-    map_frame: "map"
-    base_frame: "base_link"
+    # Plugin params
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: None
 
-    # Sensor sources
-    scan_topic: "scan"
+    # ROS Parameters
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    # scan_topic: /scan
+    scan_topic: /scan_filtered
+    # mode: mapping # It will be set in launch file
+    debug_logging: true
+    throttle_scans: 1
+    transform_publish_period: 0.02 # If 0 never publishes odometry
+    map_update_interval: 2.0
+    resolution: 0.04
+    min_laser_range: 0.2
+    max_laser_range: 12.0
+    minimum_time_interval: 0.1
+    transform_timeout: 0.2
+    tf_buffer_duration: 20.0
+    stack_size_to_use: 40000000
+    enable_interactive_mode: false
 
-    # Update and transform parameters
-    map_update_interval: 0.5      # seconds between map updates
-    transform_publish_period: 0.05# TF publish rate (s)
+    # General Parameters
+    use_scan_matching: true
+    use_scan_barycenter: true
+    minimum_travel_distance: 0.3
+    minimum_travel_heading: 0.5
+    scan_buffer_size: 10
+    scan_buffer_maximum_scan_distance: 7.0
+    link_match_minimum_response_fine: 0.1
+    link_scan_maximum_distance: 1.0
+    loop_search_maximum_distance: 3.0
+    do_loop_closing: true
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance_coarse: 3.0
+    loop_match_minimum_response_coarse: 0.35
+    loop_match_minimum_response_fine: 0.45
 
-    # Map resolution and size
-    resolution: 0.05              # meters per cell
-    max_laser_range: 30.0         # maximum LIDAR range (m)
-    minimum_score: 0.1            # minimum matching score to accept updates
+    # Correlation Parameters - Correlation Parameters
+    correlation_search_space_dimension: 0.5
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.1
 
-    # SLAM algorithm settings
-    loop_closure_detection_period: 5.0   # seconds between loop closure checks
-    map_saver_filename: "map"
+    # Correlation Parameters - Loop Closure Parameters
+    loop_search_space_dimension: 8.0
+    loop_search_space_resolution: 0.05
+    loop_search_space_smear_deviation: 0.03
 
-    # Optimization settings
-    optimize_every_n_nodes: 10           # graph optimization frequency
+    # Scan Matcher Parameters
+    distance_variance_penalty: 0.5
+    angle_variance_penalty: 1.0
+    fine_search_angle_offset: 0.00349
+    coarse_search_angle_offset: 0.349
+    coarse_angle_resolution: 0.0349
+    minimum_angle_penalty: 0.9
+    minimum_distance_penalty: 0.5
+    use_response_expansion: true
