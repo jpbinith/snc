@@ -26,6 +26,10 @@ setup(
     entry_points={
         'console_scripts': [
             'trigger_explore = snc.trigger_explore:main',
+            'hazard_detection = snc.node_hazard_detection:main',
+            'node_start = snc.node_start:main',
+            'explore_wall_follow = snc.explore_wall_follow:main',
+            
         ],
     },
 )
