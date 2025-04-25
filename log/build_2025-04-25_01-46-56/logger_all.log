@@ -1,0 +1,94 @@
+[2.211s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.211s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, lookup_in_workspace=False, cargo_args=None, clean_build=False, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f04ef94b100>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f04ef94a590>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f04ef94a590>>, mixin_verb=('build',))
+[4.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.514s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/user/snc'
+[4.515s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.516s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.516s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.516s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ament_cargo']
+[4.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ament_cargo'
+[4.518s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.518s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.705s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'snc'
+[4.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.001s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'lookup_in_workspace' from command line to 'False'
+[5.002s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'cargo_args' from command line to 'None'
+[5.009s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'clean_build' from command line to 'False'
+[5.009s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'cmake_args' from command line to 'None'
+[5.010s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'cmake_target' from command line to 'None'
+[5.010s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.010s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'cmake_clean_cache' from command line to 'False'
+[5.011s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'cmake_clean_first' from command line to 'False'
+[5.011s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'cmake_force_configure' from command line to 'False'
+[5.011s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'ament_cmake_args' from command line to 'None'
+[5.012s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'catkin_cmake_args' from command line to 'None'
+[5.012s] Level 5:colcon.colcon_core.verb:set package 'snc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.012s] DEBUG:colcon.colcon_core.verb:Building package 'snc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/snc/build/snc', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/snc/install/snc', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/user/snc', 'symlink_install': False, 'test_result_base': None}
+[5.012s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.014s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.014s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/user/snc' with build type 'ament_python'
+[5.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('snc', 'ament_prefix_path')
+[5.095s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/snc/install/snc/share/snc/hook/ament_prefix_path.ps1'
+[5.098s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/snc/install/snc/share/snc/hook/ament_prefix_path.dsv'
+[5.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/snc/install/snc/share/snc/hook/ament_prefix_path.sh'
+[5.103s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.103s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.131s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/user/ros2_ws/install/explore_lite' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[5.138s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/user/ros2_ws/install/explore_lite' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[7.322s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/user/snc'
+[7.323s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/snc': PYTHONPATH=/home/user/snc/build/snc/prefix_override:/home/user/snc/install/snc/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/snc build --build-base /home/user/snc/build/snc/build install --record /home/user/snc/build/snc/install.log --single-version-externally-managed install_data
+[12.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/snc' returned '0': PYTHONPATH=/home/user/snc/build/snc/prefix_override:/home/user/snc/install/snc/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/snc build --build-base /home/user/snc/build/snc/build install --record /home/user/snc/build/snc/install.log --single-version-externally-managed install_data
+[12.114s] Level 1:colcon.colcon_core.environment:checking '/home/user/snc/install/snc' for CMake module files
+[12.115s] Level 1:colcon.colcon_core.environment:checking '/home/user/snc/install/snc' for CMake config files
+[12.116s] Level 1:colcon.colcon_core.environment:checking '/home/user/snc/install/snc/lib'
+[12.117s] Level 1:colcon.colcon_core.environment:checking '/home/user/snc/install/snc/bin'
+[12.117s] Level 1:colcon.colcon_core.environment:checking '/home/user/snc/install/snc/lib/pkgconfig/snc.pc'
+[12.117s] Level 1:colcon.colcon_core.environment:checking '/home/user/snc/install/snc/lib/python3.10/site-packages'
+[12.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('snc', 'pythonpath')
+[12.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/snc/install/snc/share/snc/hook/pythonpath.ps1'
+[12.119s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/snc/install/snc/share/snc/hook/pythonpath.dsv'
+[12.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/snc/install/snc/share/snc/hook/pythonpath.sh'
+[12.121s] Level 1:colcon.colcon_core.environment:checking '/home/user/snc/install/snc/bin'
+[12.121s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(snc)
+[12.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/snc/install/snc/share/snc/package.ps1'
+[12.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/snc/install/snc/share/snc/package.dsv'
+[12.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/snc/install/snc/share/snc/package.sh'
+[12.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/snc/install/snc/share/snc/package.bash'
+[12.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/snc/install/snc/share/snc/package.zsh'
+[12.135s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/snc/install/snc/share/colcon-core/packages/snc)
+[12.136s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.137s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.137s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.137s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.233s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[12.233s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.234s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.235s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.297s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[12.298s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.302s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/snc/install/local_setup.ps1'
+[12.305s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/user/snc/install/_local_setup_util_ps1.py'
+[12.310s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/snc/install/setup.ps1'
+[12.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/snc/install/local_setup.sh'
+[12.321s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/user/snc/install/_local_setup_util_sh.py'
+[12.322s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/snc/install/setup.sh'
+[12.329s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/snc/install/local_setup.bash'
+[12.330s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/snc/install/setup.bash'
+[12.336s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/snc/install/local_setup.zsh'
+[12.338s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/snc/install/setup.zsh'

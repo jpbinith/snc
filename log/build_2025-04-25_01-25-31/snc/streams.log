@@ -1,0 +1,28 @@
+[3.698s] Invoking command in '/home/user/snc': PYTHONPATH=/home/user/snc/build/snc/prefix_override:/home/user/snc/install/snc/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/snc build --build-base /home/user/snc/build/snc/build install --record /home/user/snc/build/snc/install.log --single-version-externally-managed install_data
+[5.288s] running egg_info
+[5.290s] writing build/snc/snc.egg-info/PKG-INFO
+[5.291s] writing dependency_links to build/snc/snc.egg-info/dependency_links.txt
+[5.291s] writing entry points to build/snc/snc.egg-info/entry_points.txt
+[5.292s] writing requirements to build/snc/snc.egg-info/requires.txt
+[5.292s] writing top-level names to build/snc/snc.egg-info/top_level.txt
+[5.294s] reading manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+[5.297s] writing manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+[5.297s] running build
+[5.297s] running build_py
+[5.298s] copying snc/track_home.py -> /home/user/snc/build/snc/build/lib/snc
+[5.298s] running install
+[5.298s] running install_lib
+[5.299s] copying /home/user/snc/build/snc/build/lib/snc/track_home.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+[5.308s] byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/track_home.py to track_home.cpython-310.pyc
+[5.311s] running install_data
+[5.311s] running install_egg_info
+[5.318s] removing '/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info' (and everything under it)
+[5.318s] Copying build/snc/snc.egg-info to /home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info
+[5.319s] running install_scripts
+[5.479s] Installing explore_wall_follow script to /home/user/snc/install/snc/lib/snc
+[5.482s] Installing hazard_detection script to /home/user/snc/install/snc/lib/snc
+[5.482s] Installing node_start script to /home/user/snc/install/snc/lib/snc
+[5.484s] Installing track_home script to /home/user/snc/install/snc/lib/snc
+[5.485s] Installing trigger_explore script to /home/user/snc/install/snc/lib/snc
+[5.486s] writing list of installed files to '/home/user/snc/build/snc/install.log'
+[5.638s] Invoked command in '/home/user/snc' returned '0': PYTHONPATH=/home/user/snc/build/snc/prefix_override:/home/user/snc/install/snc/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/snc build --build-base /home/user/snc/build/snc/build install --record /home/user/snc/build/snc/install.log --single-version-externally-managed install_data

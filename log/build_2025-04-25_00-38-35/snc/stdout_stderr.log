@@ -1,0 +1,58 @@
+running egg_info
+creating build/snc/snc.egg-info
+writing build/snc/snc.egg-info/PKG-INFO
+writing dependency_links to build/snc/snc.egg-info/dependency_links.txt
+writing entry points to build/snc/snc.egg-info/entry_points.txt
+writing requirements to build/snc/snc.egg-info/requires.txt
+writing top-level names to build/snc/snc.egg-info/top_level.txt
+writing manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+reading manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+writing manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/user/snc/build/snc/build
+creating /home/user/snc/build/snc/build/lib
+creating /home/user/snc/build/snc/build/lib/snc
+copying snc/trigger_explore.py -> /home/user/snc/build/snc/build/lib/snc
+copying snc/node_hazard_detection copy.py -> /home/user/snc/build/snc/build/lib/snc
+copying snc/node_start.py -> /home/user/snc/build/snc/build/lib/snc
+copying snc/explore_wall_follow.py -> /home/user/snc/build/snc/build/lib/snc
+copying snc/__init__.py -> /home/user/snc/build/snc/build/lib/snc
+copying snc/node_hazard_detection.py -> /home/user/snc/build/snc/build/lib/snc
+running install
+running install_lib
+creating /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+copying /home/user/snc/build/snc/build/lib/snc/trigger_explore.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+copying /home/user/snc/build/snc/build/lib/snc/node_hazard_detection copy.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+copying /home/user/snc/build/snc/build/lib/snc/node_start.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+copying /home/user/snc/build/snc/build/lib/snc/explore_wall_follow.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+copying /home/user/snc/build/snc/build/lib/snc/__init__.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+copying /home/user/snc/build/snc/build/lib/snc/node_hazard_detection.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/trigger_explore.py to trigger_explore.cpython-310.pyc
+byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_hazard_detection copy.py to node_hazard_detection copy.cpython-310.pyc
+byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_start.py to node_start.cpython-310.pyc
+byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/explore_wall_follow.py to explore_wall_follow.cpython-310.pyc
+byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_hazard_detection.py to node_hazard_detection.cpython-310.pyc
+running install_data
+creating /home/user/snc/install/snc/share/ament_index
+creating /home/user/snc/install/snc/share/ament_index/resource_index
+creating /home/user/snc/install/snc/share/ament_index/resource_index/packages
+copying resource/snc -> /home/user/snc/install/snc/share/ament_index/resource_index/packages
+creating /home/user/snc/install/snc/share/snc/launch
+copying launch/start_SNC.launch.py -> /home/user/snc/install/snc/share/snc/launch
+copying launch/find_hazards.launch.py -> /home/user/snc/install/snc/share/snc/launch
+copying launch/snc_launch.launch.py -> /home/user/snc/install/snc/share/snc/launch
+creating /home/user/snc/install/snc/share/snc/config
+copying config/explore_params.yaml -> /home/user/snc/install/snc/share/snc/config
+copying config/nav2_params.yaml -> /home/user/snc/install/snc/share/snc/config
+copying config/slam_toolbox_params.yaml -> /home/user/snc/install/snc/share/snc/config
+copying package.xml -> /home/user/snc/install/snc/share/snc
+running install_egg_info
+Copying build/snc/snc.egg-info to /home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info
+running install_scripts
+Installing explore_wall_follow script to /home/user/snc/install/snc/lib/snc
+Installing hazard_detection script to /home/user/snc/install/snc/lib/snc
+Installing node_start script to /home/user/snc/install/snc/lib/snc
+Installing trigger_explore script to /home/user/snc/install/snc/lib/snc
+writing list of installed files to '/home/user/snc/build/snc/install.log'

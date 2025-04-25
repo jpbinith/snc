@@ -1,0 +1,30 @@
+running egg_info
+writing build/snc/snc.egg-info/PKG-INFO
+writing dependency_links to build/snc/snc.egg-info/dependency_links.txt
+writing entry points to build/snc/snc.egg-info/entry_points.txt
+writing requirements to build/snc/snc.egg-info/requires.txt
+writing top-level names to build/snc/snc.egg-info/top_level.txt
+reading manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+writing manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+running build
+running build_py
+copying snc/track_home.py -> /home/user/snc/build/snc/build/lib/snc
+copying snc/explore_wall_follow.py -> /home/user/snc/build/snc/build/lib/snc
+running install
+running install_lib
+copying /home/user/snc/build/snc/build/lib/snc/track_home.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+copying /home/user/snc/build/snc/build/lib/snc/explore_wall_follow.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/track_home.py to track_home.cpython-310.pyc
+byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/explore_wall_follow.py to explore_wall_follow.cpython-310.pyc
+running install_data
+copying launch/start_SNC.launch.py -> /home/user/snc/install/snc/share/snc/launch
+running install_egg_info
+removing '/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/snc/snc.egg-info to /home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info
+running install_scripts
+Installing explore_wall_follow script to /home/user/snc/install/snc/lib/snc
+Installing hazard_detection script to /home/user/snc/install/snc/lib/snc
+Installing node_start script to /home/user/snc/install/snc/lib/snc
+Installing track_home script to /home/user/snc/install/snc/lib/snc
+Installing trigger_explore script to /home/user/snc/install/snc/lib/snc
+writing list of installed files to '/home/user/snc/build/snc/install.log'

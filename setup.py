@@ -29,6 +29,7 @@ setup(
             'hazard_detection = snc.node_hazard_detection:main',
             'node_start = snc.node_start:main',
             'explore_wall_follow = snc.explore_wall_follow:main',
+            'track_home = snc.track_home:main',
             
         ],
     },
