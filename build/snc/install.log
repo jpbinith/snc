@@ -1,0 +1,36 @@
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/trigger_explore.py
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_hazard_detection copy.py
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_start.py
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/track_home.py
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/explore_wall_follow.py
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/__init__.py
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_hazard_detection.py
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/__pycache__/trigger_explore.cpython-310.pyc
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/__pycache__/node_hazard_detection copy.cpython-310.pyc
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/__pycache__/node_start.cpython-310.pyc
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/__pycache__/track_home.cpython-310.pyc
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/__pycache__/explore_wall_follow.cpython-310.pyc
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/__pycache__/__init__.cpython-310.pyc
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc/__pycache__/node_hazard_detection.cpython-310.pyc
+/home/user/snc/install/snc/share/ament_index/resource_index/packages/snc
+/home/user/snc/install/snc/share/snc/launch
+/home/user/snc/install/snc/share/snc/launch/start_SNC.launch.py
+/home/user/snc/install/snc/share/snc/launch/find_hazards.launch.py
+/home/user/snc/install/snc/share/snc/launch/snc_launch.launch.py
+/home/user/snc/install/snc/share/snc/launch/track_home.launch.py
+/home/user/snc/install/snc/share/snc/config/explore_params.yaml
+/home/user/snc/install/snc/share/snc/config/nav2_params.yaml
+/home/user/snc/install/snc/share/snc/config/slam_toolbox_params.yaml
+/home/user/snc/install/snc/share/snc/package.xml
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info/PKG-INFO
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info/zip-safe
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info/top_level.txt
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info/requires.txt
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info/entry_points.txt
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info/SOURCES.txt
+/home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info/dependency_links.txt
+/home/user/snc/install/snc/lib/snc/explore_wall_follow
+/home/user/snc/install/snc/lib/snc/hazard_detection
+/home/user/snc/install/snc/lib/snc/node_start
+/home/user/snc/install/snc/lib/snc/track_home
+/home/user/snc/install/snc/lib/snc/trigger_explore

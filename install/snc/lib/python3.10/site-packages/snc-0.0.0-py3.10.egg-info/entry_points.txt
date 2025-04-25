@@ -1,0 +1,7 @@
+[console_scripts]
+explore_wall_follow = snc.explore_wall_follow:main
+hazard_detection = snc.node_hazard_detection:main
+node_start = snc.node_start:main
+track_home = snc.track_home:main
+trigger_explore = snc.trigger_explore:main
+

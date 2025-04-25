@@ -1,0 +1,60 @@
+[1.053s] Invoking command in '/home/user/snc': PYTHONPATH=/home/user/snc/build/snc/prefix_override:/home/user/snc/install/snc/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/snc build --build-base /home/user/snc/build/snc/build install --record /home/user/snc/build/snc/install.log --single-version-externally-managed install_data
+[1.505s] running egg_info
+[1.506s] creating build/snc/snc.egg-info
+[1.506s] writing build/snc/snc.egg-info/PKG-INFO
+[1.507s] writing dependency_links to build/snc/snc.egg-info/dependency_links.txt
+[1.507s] writing entry points to build/snc/snc.egg-info/entry_points.txt
+[1.507s] writing requirements to build/snc/snc.egg-info/requires.txt
+[1.507s] writing top-level names to build/snc/snc.egg-info/top_level.txt
+[1.507s] writing manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+[1.510s] reading manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+[1.511s] writing manifest file 'build/snc/snc.egg-info/SOURCES.txt'
+[1.511s] running build
+[1.511s] running build_py
+[1.511s] creating /home/user/snc/build/snc/build
+[1.512s] creating /home/user/snc/build/snc/build/lib
+[1.512s] creating /home/user/snc/build/snc/build/lib/snc
+[1.512s] copying snc/trigger_explore.py -> /home/user/snc/build/snc/build/lib/snc
+[1.513s] copying snc/node_hazard_detection copy.py -> /home/user/snc/build/snc/build/lib/snc
+[1.513s] copying snc/node_start.py -> /home/user/snc/build/snc/build/lib/snc
+[1.513s] copying snc/explore_wall_follow.py -> /home/user/snc/build/snc/build/lib/snc
+[1.514s] copying snc/__init__.py -> /home/user/snc/build/snc/build/lib/snc
+[1.514s] copying snc/node_hazard_detection.py -> /home/user/snc/build/snc/build/lib/snc
+[1.515s] running install
+[1.515s] running install_lib
+[1.516s] creating /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+[1.516s] copying /home/user/snc/build/snc/build/lib/snc/trigger_explore.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+[1.516s] copying /home/user/snc/build/snc/build/lib/snc/node_hazard_detection copy.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+[1.516s] copying /home/user/snc/build/snc/build/lib/snc/node_start.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+[1.516s] copying /home/user/snc/build/snc/build/lib/snc/explore_wall_follow.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+[1.516s] copying /home/user/snc/build/snc/build/lib/snc/__init__.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+[1.517s] copying /home/user/snc/build/snc/build/lib/snc/node_hazard_detection.py -> /home/user/snc/install/snc/lib/python3.10/site-packages/snc
+[1.518s] byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/trigger_explore.py to trigger_explore.cpython-310.pyc
+[1.519s] byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_hazard_detection copy.py to node_hazard_detection copy.cpython-310.pyc
+[1.521s] byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_start.py to node_start.cpython-310.pyc
+[1.521s] byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/explore_wall_follow.py to explore_wall_follow.cpython-310.pyc
+[1.523s] byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/__init__.py to __init__.cpython-310.pyc
+[1.523s] byte-compiling /home/user/snc/install/snc/lib/python3.10/site-packages/snc/node_hazard_detection.py to node_hazard_detection.cpython-310.pyc
+[1.523s] running install_data
+[1.523s] creating /home/user/snc/install/snc/share/ament_index
+[1.523s] creating /home/user/snc/install/snc/share/ament_index/resource_index
+[1.523s] creating /home/user/snc/install/snc/share/ament_index/resource_index/packages
+[1.523s] copying resource/snc -> /home/user/snc/install/snc/share/ament_index/resource_index/packages
+[1.523s] creating /home/user/snc/install/snc/share/snc/launch
+[1.524s] copying launch/start_SNC.launch.py -> /home/user/snc/install/snc/share/snc/launch
+[1.525s] copying launch/find_hazards.launch.py -> /home/user/snc/install/snc/share/snc/launch
+[1.525s] copying launch/snc_launch.launch.py -> /home/user/snc/install/snc/share/snc/launch
+[1.525s] creating /home/user/snc/install/snc/share/snc/config
+[1.525s] copying config/explore_params.yaml -> /home/user/snc/install/snc/share/snc/config
+[1.525s] copying config/nav2_params.yaml -> /home/user/snc/install/snc/share/snc/config
+[1.525s] copying config/slam_toolbox_params.yaml -> /home/user/snc/install/snc/share/snc/config
+[1.525s] copying package.xml -> /home/user/snc/install/snc/share/snc
+[1.525s] running install_egg_info
+[1.530s] Copying build/snc/snc.egg-info to /home/user/snc/install/snc/lib/python3.10/site-packages/snc-0.0.0-py3.10.egg-info
+[1.530s] running install_scripts
+[1.570s] Installing explore_wall_follow script to /home/user/snc/install/snc/lib/snc
+[1.570s] Installing hazard_detection script to /home/user/snc/install/snc/lib/snc
+[1.570s] Installing node_start script to /home/user/snc/install/snc/lib/snc
+[1.570s] Installing trigger_explore script to /home/user/snc/install/snc/lib/snc
+[1.570s] writing list of installed files to '/home/user/snc/build/snc/install.log'
+[1.600s] Invoked command in '/home/user/snc' returned '0': PYTHONPATH=/home/user/snc/build/snc/prefix_override:/home/user/snc/install/snc/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/snc build --build-base /home/user/snc/build/snc/build install --record /home/user/snc/build/snc/install.log --single-version-externally-managed install_data
