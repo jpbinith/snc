@@ -36,6 +36,11 @@ def generate_launch_description():
 
         DeclareLaunchArgument('camera_info_topic', default_value=camera_info_topic, description='Camera info topic'),
         DeclareLaunchArgument('camera_info_topic_repeat', default_value=camera_info_topic_repeat, description='Camera info topic (reliable)'),
+        DeclareLaunchArgument(
+            'rviz_config_path',
+            default_value=[EnvironmentVariable(name='AIIL_CHECKOUT_DIR'), '/humble_workspace/src/snc/rviz/explore_visualization.rviz'],
+            description='Path to RViz config file'
+        ),
 
         # Find Object 2D node
         Node(
@@ -91,4 +96,26 @@ def generate_launch_description():
             ],
             #condition=LaunchConfiguration('gui')  # Optional: You can control this node's launch based on the argument
         ),
+                # Maze Escape (exploration) node
+        Node(
+            package='snc',  
+            executable='explore_wall_follow',  
+            name='explore_wall_follow',
+            output='screen'
+        ),
+        #object detection-localization
+          Node(
+            package='snc',  
+            executable='hazard_detection',  
+            name='hazard_detection',
+            output='screen'
+        ),
+            Node(
+            package='rviz2',
+            executable='rviz2',
+            name='rviz2',
+            output='screen',
+            arguments=['-d', LaunchConfiguration('rviz_config_path')],
+        )
+
     ])
