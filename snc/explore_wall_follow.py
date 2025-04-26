@@ -20,7 +20,7 @@ class MazeEscapeNode(Node):
         self.scan_sub = self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
         self.trigger_sub = self.create_subscription(Empty, '/trigger_start', self.trigger_callback, 10)
 
-        self.path_pub = self.create_publisher(Path, '/path_explore', 10)
+        #self.path_pub = self.create_publisher(Path, '/path_explore', 10)
         self.path_msg = Path()
         self.path_msg.header.frame_id = 'map'
 
@@ -81,7 +81,7 @@ class MazeEscapeNode(Node):
 
         self.path_msg.poses.append(pose)
         self.path_msg.header.stamp = self.get_clock().now().to_msg()
-        self.path_pub.publish(self.path_msg)
+        #self.path_pub.publish(self.path_msg)
 
     def move(self, linear_x=0.0, angular_z=0.0, duration=1.0):
         msg = Twist()
